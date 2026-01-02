@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Bu Mur - Rasa Bintang Lima, Harga Kaki Lima</title>
+    
+    <script src="https://kit.fontawesome.com/dcda072f7b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><h2>Warung Bu Mur</h2></div>
+    <div class="burger" id="burger-btn"><span></span><span></span><span></span></div>
+    <nav>
+        <ul id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#makanan">Makanan</a></li>
+            <li><a href="#roti">Roti Bakar</a></li>
+            <li><a href="#minuman">Minuman</a></li>
+            <li><a href="#jajanan">Jajanan</a></li>
+            <li><a href="#lokasi">Lokasi</a></li>
+            <li><a href="#pembayaran">Pembayaran</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Sajian Makanan & Minuman</h1>
+    <p>Masakan rumah lezat, higienis & ramah di kantong pelajar.</p>
+    <p class="ilustrasi">*Gambar hanyalah ilustrasi.</p>
+</section>
+
+<div class="container">
+    <h2 class="section-title" id="makanan">Daftar Makanan</h2>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/736x/ed/71/35/ed7135ad6b6990499444aea25a6a4ef7.jpg" alt="Nasgor Kecap">
+            <div class="menu-info">
+                <h3>Nasi Goreng Kecap + Telur</h3>
+                <p>Nasi goreng kecap lezat dengan telur.</p>
+                <span class="price">Rp 10.000</span>
+                <input type="text" id="note-nas1" class="note-input" placeholder="Catatan: Pedas, dll">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Nasi Goreng Kecap + Telur', 10000, 'note-nas1', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/736x/e0/dd/31/e0dd31cc530e797ca55a28dd28181226.jpg" alt="Nasgor Nugget">
+            <div class="menu-info">
+                <h3>Nasi Goreng Kecap + Telur + Nugget</h3>
+                <p>Nasi goreng spesial lengkap dengan nugget.</p>
+                <span class="price">Rp 13.000</span>
+                <input type="text" id="note-nas2" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Nasi Goreng Kecap + Telur + Nugget', 13000, 'note-nas2', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://o-cdf.oramiland.com/unsafe/cnc-magazine.oramiland.com/parenting/original_images/Resep_Nasi_Goreng_Putih_dengan_Telur.jpg" alt="Nasgor Putih">
+            <div class="menu-info">
+                <h3>Nasi Goreng Putih + Telur</h3>
+                <p>Nasi goreng gurih (tanpa kecap) dengan telur Mata Sapi.</p>
+                <span class="price">Rp 10.000</span>
+                <input type="text" id="note-nas3" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Nasi Goreng Putih + Telur', 10000, 'note-nas3', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1712926742786-c77530757ee3?q=80&w=1674&auto=format&fit=crop" alt="Mie Goreng">
+            <div class="menu-info">
+                <h3>Mie Goreng + Telur</h3>
+                <p>Mie goreng instan favorit dengan telur.</p>
+                <span class="price">Rp 10.000</span>
+                <input type="text" id="note-mie1" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Mie Goreng + Telur', 10000, 'note-mie1', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/originals/d4/f2/37/d4f23745681cc05d0fb460be2c2ea040.jpg" alt="Mie Rebus">
+            <div class="menu-info">
+                <h3>Mie Rebus + Telur</h3>
+                <p>Mie kuah hangat lengkap dengan telur.</p>
+                <span class="price">Rp 10.000</span>
+                <input type="text" id="note-mie2" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Mie Rebus + Telur', 10000, 'note-mie2', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/736x/f9/3a/2f/f93a2f72a5bf8526d62f75ce3520488d.jpg" alt="Nasi Ayam">
+            <div class="menu-info">
+                <h3>Nasi Ayam Tempe Tahu Sambal</h3>
+                <p>Nasi ayam goreng lengkap dengan lauk pauk.</p>
+                <span class="price">Rp 14.000</span>
+                <input type="text" id="note-aym" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Nasi Ayam Tempe Tahu Sambal', 14000, 'note-aym', event)">+ Keranjang</button>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title" id="roti">Cemilan Roti Bakar</h2>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/1200x/7b/4b/84/7b4b847c51d7bdd915772316572f29dd.jpg" alt="Roti">
+            <div class="menu-info">
+                <h3>Coklat Susu</h3>
+                <span class="price">Rp 3.000</span>
+                <input type="text" id="note-rt1" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Roti Coklat Susu', 3000, 'note-rt1', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/1200x/a5/ff/9a/a5ff9a5e9daed1e4eac0e2ae93dd8ef8.jpg" alt="Roti">
+            <div class="menu-info">
+                <h3>Coklat Susu Keju</h3>
+                <span class="price">Rp 3.000</span>
+                <input type="text" id="note-rt2" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Roti Coklat Susu Keju', 3000, 'note-rt2', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/736x/07/c0/74/07c074e65d1c7d848a228d2d21fd9240.jpg" alt="Roti">
+            <div class="menu-info">
+                <h3>Keju Susu</h3>
+                <span class="price">Rp 3.000</span>
+                <input type="text" id="note-rt3" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Roti Keju Susu', 3000, 'note-rt3', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/1200x/3e/e3/da/3ee3dacafe57b4706cac3f386431e6d4.jpg" alt="Roti">
+            <div class="menu-info">
+                <h3>Blueberry</h3>
+                <span class="price">Rp 3.000</span>
+                <input type="text" id="note-rt4" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Roti Blueberry', 3000, 'note-rt4', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/736x/84/9c/21/849c21236a8687bc418aa723173b11ea.jpg" alt="Roti">
+            <div class="menu-info">
+                <h3>Strawberry</h3>
+                <span class="price">Rp 3.000</span>
+                <input type="text" id="note-rt5" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Roti Strawberry', 3000, 'note-rt5', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/736x/c5/8c/05/c58c05ab1308fe9f0a794c8debe8958a.jpg" alt="Roti">
+            <div class="menu-info">
+                <h3>Tiramisu</h3>
+                <span class="price">Rp 4.000</span>
+                <input type="text" id="note-rt6" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Roti Tiramisu', 4000, 'note-rt6', event)">+ Keranjang</button>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title" id="minuman">Daftar Minuman</h2>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98v-lnsqzioemenu4a" alt="Neo">
+            <div class="menu-info">
+                <h3>Neo Coffee</h3>
+                <select id="sel-neo" class="variant-select">
+                    <option value="Caramel Macchiato">Caramel Macchiato</option>
+                    <option value="Moccachino">Moccachino</option>
+                    <option value="Tiramisu">Tiramisu</option>
+                </select>
+                <span class="price">Rp 3.000</span>
+                <input type="text" id="note-m1" class="note-input" placeholder="Catatan: Es dikit, dll">
+                <button class="btn-pesan" onclick="tambahVarianKeKeranjang('Neo Coffee', 'sel-neo', 3000, 'note-m1', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdvm-mdm2w40n62opaf" alt="Pop">
+            <div class="menu-info">
+                <h3>Pop Ice</h3>
+                <select id="sel-pop" class="variant-select">
+                    <option value="Coklat">Coklat</option>
+                    <option value="Strawberry">Strawberry</option>
+                    <option value="Anggur">Anggur</option>
+                    <option value="Melon">Melon</option>
+                    <option value="Vanilla Blue">Vanilla Blue</option>
+                    <option value="Mangga">Mangga</option>
+                </select>
+                <span class="price">Rp 3.000</span>
+                <input type="text" id="note-m2" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahVarianKeKeranjang('Pop Ice', 'sel-pop', 3000, 'note-m2', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r990-lsrzdultjxj1af" alt="Tea">
+            <div class="menu-info">
+                <h3>Tea Jus</h3>
+                <select id="sel-tea" class="variant-select">
+                    <option value="Gula Batu">Gula Batu</option>
+                    <option value="Melati">Melati</option>
+                    <option value="Apel">Apel</option>
+                    <option value="Lemon">Lemon</option>
+                </select>
+                <span class="price">Rp 1.000</span>
+                <input type="text" id="note-m3" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahVarianKeKeranjang('Tea Jus', 'sel-tea', 1000, 'note-m3', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://id-test-11.slatic.net/p/31806d65677c0a5250c0537335e9a2b8.png" alt="Jasjus">
+            <div class="menu-info">
+                <h3>Jasjus</h3>
+                <select id="sel-jas" class="variant-select">
+                    <option value="Jambu">Jambu</option>
+                    <option value="Mangga">Mangga</option>
+                    <option value="Strawberry">Strawberry</option>
+                </select>
+                <span class="price">Rp 1.000</span>
+                <input type="text" id="note-m4" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahVarianKeKeranjang('Jasjus', 'sel-jas', 1000, 'note-m4', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/119/MTA-154698896/top_ice_top_ice_minuman_all_rasa_-10-s-renceng-_full01_vr3roa2x.jpg" alt="Top">
+            <div class="menu-info">
+                <h3>Top Ice</h3>
+                <select id="sel-top" class="variant-select">
+                    <option value="Strawberry">Strawberry</option>
+                    <option value="Cappucino">Cappucino</option>
+                    <option value="Melon">Melon</option>
+                    <option value="Anggur">Anggur</option>
+                </select>
+                <span class="price">Rp 1.000</span>
+                <input type="text" id="note-m5" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahVarianKeKeranjang('Top Ice', 'sel-top', 1000, 'note-m5', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/1200x/d2/91/a2/d291a2b8687101fcfacaeb51750e92d7.jpg" alt="Campur">
+            <div class="menu-info">
+                <h3>Es Campur</h3>
+                <span class="price">Rp 5.000</span>
+                <input type="text" id="note-m6" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Es Campur', 5000, 'note-m6', event)">+ Keranjang</button>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title" id="jajanan">Jajanan</h2>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/1200x/5f/45/53/5f455323778c16da50879fc065c7ad57.jpg" alt="Jajan">
+            <div class="menu-info">
+                <h3>Keju Aroma</h3>
+                <span class="price">Rp 1.500</span>
+                <input type="text" id="note-j1" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Keju Aroma', 1500, 'note-j1', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/1200x/20/f1/d5/20f1d512981071f4dfbe0accfcff5a47.jpg" alt="Jajan">
+            <div class="menu-info">
+                <h3>Cibay (Aci Ngambay)</h3>
+                <span class="price">Rp 2.000</span>
+                <input type="text" id="note-j2" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Cibay', 2000, 'note-j2', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/1200x/ef/56/13/ef561321f1bba4d8747a5bc8e5514db8.jpg" alt="Jajan">
+            <div class="menu-info">
+                <h3>Lumpia Seblak</h3>
+                <span class="price">Rp 2.000</span>
+                <input type="text" id="note-j3" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Lumpia Seblak', 2000, 'note-j3', event)">+ Keranjang</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/736x/dc/3e/2f/dc3e2fbeca2af860569c4e0dd9b03fbe.jpg" alt="Jajan">
+            <div class="menu-info">
+                <h3>Lumpia Tahu</h3>
+                <span class="price">Rp 2.000</span>
+                <input type="text" id="note-j4" class="note-input" placeholder="Catatan...">
+                <button class="btn-pesan" onclick="tambahKeKeranjang('Lumpia Tahu', 2000, 'note-j4', event)">+ Keranjang</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="maps-card" id="lokasi">
+        <h2 class="section-title" style="margin-top: 0;">Lokasi Kami</h2>
+        <div class="maps-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1767173996694!6m8!1m7!1s-hEW95dLSNORsn_8pa9qDQ!2m2!1d-6.539857157612117!2d107.4460913097015!3f273.58!4f-18.620000000000005!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="maps-info">
+            <p><strong>Rumah Makan BU MUR</strong></p>
+            <p style="color: #666; font-size: 0.9rem;">Jl. Gang Mawar, Purwakarta, Jawa Barat.</p>
+            <a href="https://maps.app.goo.gl/u9JfQWCWr1sMi7Wd9" target="_blank" style="color: #e67e22; text-decoration: none; font-weight: bold; margin-top: 10px; display: block;">➔ Buka di Google Maps 📍</a>
+        </div>
+    </div>
+
+    <div class="container" id="pembayaran">
+        <h2 class="section-title">Metode Pembayaran</h2>
+        <div class="payment-card">
+            <p>Kami hanya menerima pembayaran tunai</p>
+            <div class="payment-methods">
+                <div class="method-item">💵 Tunai</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cart-panel" id="cartPanel">
+    <div class="cart-details">
+        <h4 id="cartCount">0 Item Terpilih</h4>
+        <p id="cartSummary">Total: Rp 0</p>
+    </div>
+    <div>
+        <a href="javascript:void(0)" class="btn-lihat-detail" onclick="bukaModal()">
+            <i class="fa-solid fa-cart-shopping"></i> Keranjang
+        </a>
+        <a href="javascript:void(0)" class="btn-wa-final" onclick="kirimWhatsApp()">
+            <i class="fa-brands fa-whatsapp"></i> Pesan (WA)
+        </a>
+    </div>
+</div>
+
+<div id="cartModal" class="modal">
+    <div class="modal-content">
+        <div style="display:flex; justify-content:space-between; margin-bottom:15px;">
+            <h3>Detail Pesanan</h3>
+            <button onclick="tutupModal()" style="border:none; background:none; font-size:1.5rem; cursor:pointer;">×</button>
+        </div>
+        <div id="modalList" style="max-height: 300px; overflow-y: auto; margin-bottom: 15px;"></div>
+        <div id="modalTotal" style="font-weight:bold; font-size:1.1rem; border-top:2px solid #eee; padding-top:10px; margin-bottom:15px;">Total: Rp 0</div>
+        <button class="btn-hapus-semua" onclick="kosongkanKeranjang()">Hapus Semua Item</button>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Rumah Makan Bu Mur.</p>
+    <p>WhatsApp: 0813-8731-2674</p>
+    <p style="font-size: 0.8rem; margin-top: 10px;">Jl. Gang Mawar, Purwakarta, Jawa Barat.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
