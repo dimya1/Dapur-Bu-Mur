@@ -139,7 +139,7 @@ function updateModal() {
 
 // --- INTEGRASI WHATSAPP ---
 function kirimWhatsApp() {
-    const nomorWA = "6287849780486";
+    const nomorWA = "6281387312674";
     let pesan = "Halo Rumah Makan Bu Mur 👋🏻,\nSaya ingin memesan menu berikut:\n\n";
     let totalAkhir = 0;
     
@@ -161,4 +161,5 @@ function kirimWhatsApp() {
 // Menutup modal jika klik di area luar modal
 window.onclick = (e) => { 
     if (e.target == document.getElementById('cartModal')) tutupModal(); 
+
 }
